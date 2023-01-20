@@ -11,7 +11,7 @@ public class GetUserPostsStepDef {
     @Steps
     GorestAPI gorestAPI;
 
-    @Given("Get single post with valid id {int}")
+    @Given("Get users post with valid id {int}")
     public void getSinglePostWithValidId(int id) {
         gorestAPI.GetUsersPosts(id);
     }
@@ -21,7 +21,7 @@ public class GetUserPostsStepDef {
         SerenityRest.when().get(GorestAPI.GET_USER_POSTS);
     }
 
-    @Given("Get single post with invalid id {string}")
+    @Given("Get users post with invalid id {string}")
     public void getSinglePostWithInvalidId(String id) {
         gorestAPI.GetUsersPostsInvalidPosts(id);
     }
