@@ -34,13 +34,13 @@ public class CreateTodoStepDef {
     @And("Set Authentication")
     public void setAuthentication() {
         SerenityRest.given()
-                .headers("Authorization","Bearer 9f6ec7b991ded8d609e46ad0469f5835de180d4300fbdb7e27858a18e5337bef");
+                .headers("Authorization","Bearer d0458302309555760e28b2f640c85b88ba5639d4f4421bac49d94d6492344f14");
     }
 
     @When("Send create request new comments and set authentication")
     public void sendCreateRequestNewCommentsAndSetAuthentication() {
         SerenityRest.when()
-                .post(GorestAPI.POST_CREATE_TODOS+"?access-token=9f6ec7b991ded8d609e46ad0469f5835de180d4300fbdb7e27858a18e5337bef");
+                .post(GorestAPI.POST_CREATE_TODOS+"?access-token=d0458302309555760e28b2f640c85b88ba5639d4f4421bac49d94d6492344f14");
     }
 
     @And("And Response body title should be {string}, due_on {string} and status {string}")
