@@ -1,4 +1,4 @@
-package starter.Gorest;
+package starter.Utils;
 
 public class GorestResponses {
     public static String ERROR_MESSAGE = "error";
