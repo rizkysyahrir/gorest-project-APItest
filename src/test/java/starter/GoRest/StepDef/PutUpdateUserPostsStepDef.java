@@ -52,8 +52,8 @@ public class PutUpdateUserPostsStepDef {
     }
 
     @And("Response body message should be {string}")
-    public void responseBodyMessageShouldBe(String Error) {
+    public void responseBodyMessageShouldBe(String message) {
         SerenityRest.then()
-                .body(Gorestresponses.ERROR, equalTo(Error));
+                .body(Gorestresponses.MESSAGE, equalTo(message));
     }
 }
